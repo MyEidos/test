@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://localhost:57751/Aroma/List -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - Vape.WebPortal</title>
+    <link rel="stylesheet" href="./- Vape.WebPortal_files/css" type="text/css">
+    <link href="./- Vape.WebPortal_files/icon" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="./- Vape.WebPortal_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Material Design -->
+    <link href="./- Vape.WebPortal_files/bootstrap-material-design.css" rel="stylesheet">
+    <link href="./- Vape.WebPortal_files/ripples.min.css" rel="stylesheet">
+
+    <link href="./- Vape.WebPortal_files/selectize.css" rel="stylesheet">
+    <!-- Dropdown.js -->
+    <link href="./- Vape.WebPortal_files/jquery.dropdown.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./- Vape.WebPortal_files/site.css">
+
+    <link href="./- Vape.WebPortal_files/font-awesome.css" rel="stylesheet">
+    
+    <script src="./- Vape.WebPortal_files/system.js"></script>
+    <script src="./- Vape.WebPortal_files/es6-shim.js"></script>
+    <script src="./- Vape.WebPortal_files/angular2-polyfills.js"></script>
+    <script src="./- Vape.WebPortal_files/system.src.js"></script>
+    <script src="./- Vape.WebPortal_files/Rx.js"></script>
+    <script src="./- Vape.WebPortal_files/jquery.js"></script>
+
+
+    <script src="./- Vape.WebPortal_files/selectize.min.js"></script>
+    <script>
+        System.config({
+            map: {
+                'rxjs': '/lib/js/rxjs'
+            },
+            packages: {
+                'app': { defaultExtension: 'js' },
+                'rxjs': { defaultExtension: 'js' }
+            },
+            defaultJSExtensions: true
+
+        });
+    </script>
+    <script src="./- Vape.WebPortal_files/angular2.dev.js"></script>
+    <script src="./- Vape.WebPortal_files/http.dev.js"></script>
+    <script src="./- Vape.WebPortal_files/router.dev.js"></script>
+
+
+</head>
+<body class="">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:57751/">Vape.WebPortal</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost:57751/Home/About">Моя лаборатория</a></li>
+                    <li><a href="http://localhost:57751/Aroma/List">Аромы</a></li>
+                </ul>
+                
+    <form method="post" id="logoutForm" class="navbar-right" action="http://localhost:57751/Account/LogOff">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a title="Manage" href="http://localhost:57751/Manage">Привет test@gmail.com!</a>
+            </li>
+            <li>
+                <button type="submit" class="btn btn-link navbar-btn navbar-link">Уйти</button>
+            </li>
+        </ul>
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8G-9Q1fCv7NBpIr0t2QU7v636Q2udHp1Nj5wOTxIPCDawp1KjwPZzSuccT3Yj9nW7fnFP5Z6iLeZQJmQRKqbhH4pihXYC3YTum0FRZ27sCkqB_oJteyKZ2XzCaCxOHP4oOAN_OFYnbYU_bZzNccF1ts9km3-S7pLwxo4mFmlo6_rUq2IA38pxfEQCtMfsNPi7Q"></form>
+
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <aromalist><div class="row">
+    <label class="col-md-1 control-label">Search</label>
+    <div class="col-md-8">
+        <div class="form-group is-empty"><input class="form-control"><span class="material-input"></span></div>
+    </div>
+    <div class="col-md-1">
+        <button class="btn  btn-primary btn-raised">GO<div class="ripple-container"></div></button>
+    </div>
+    <div class="col-md-2">
+        <button class="btn btn-default btn-raised" data-target="#add-aroma-dialog" data-toggle="modal" type="button">Add Aroma<div class="ripple-container"></div></button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped table-hover table-bordered table-centered">
+            <thead>
+                <tr>
+                    <th>Vendor</th>
+                    <th>Name</th>
+                    <th>Percentage in single</th>
+                    <th>Rating</th>
+                    <th class="checkbox-column">Is My</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--template bindings={}--><tr material-design="">
+                    <td>TPA</td>
+                    <td>Peach</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="1" class="ng-valid ng-dirty ng-touched"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>TPA</td>
+                    <td>Sweet Cream</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="3" class="ng-valid ng-dirty ng-touched"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>TPA</td>
+                    <td>Sweet Cream DX</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="4" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>TPA</td>
+                    <td>test1</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="5" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>Banana Flavor Concentrate </td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="6" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>Blackberry Flavor Concentrate</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="7" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>Blue Raspberry Cotton Candy Flavor Concentrate </td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="8" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>fgsdg</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="9" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>fgsdg</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="10" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>asas</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="11" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>asas</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="12" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>asas</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="13" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>asas</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="14" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>asas</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="15" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>asas</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="16" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>asas</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="17" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>asas</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="18" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>asas</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="19" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>asas</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="20" class="ng-valid ng-dirty ng-touched"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>asas</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="21" class="ng-valid ng-dirty ng-touched"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>sdfs</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="22" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>sdfs</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="23" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>Capella</td>
+                    <td>ttt</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="24" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr><tr material-design="">
+                    <td>TPA</td>
+                    <td>ttt</td>
+                    <td>-1%</td>
+                    <td>0</td>
+                    <td class="checkbox-column">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="25" class="ng-untouched ng-pristine ng-valid"><span class="checkbox-material"><span class="check"></span></span>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<h1>true</h1>
+
+<aroma-add><div class="modal fade" id="add-aroma-dialog" style="display: none;" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+                <h4 class="modal-title">Add Aroma</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="">
+                            <fieldset>
+                                <div class="form-group clearfix">
+                                    <label class="col-md-3 control-label">Name</label>
+                                    <div class="col-md-9">
+                                        <input class="form-control ng-valid ng-dirty ng-touched">
+                                    </div>
+                                <span class="material-input"></span></div>
+                                <div class="form-group clearfix">
+                                    <label class="col-md-3 control-label" for="select-vendor">Vendor</label>
+                                    <div class="col-md-7">
+                                        
+                                        <select class="form-control selectized" id="select-vendor" placeholder="Select a vendor..." plugin-init="" tabindex="-1" style="display: none;"><option value="1" selected="selected">The Perfumers Apprentice</option></select><div class="selectize-control form-control single"><div class="selectize-input items has-options full has-items"><div data-value="1" class="item">The Perfumers Apprentice</div><input type="text" autocomplete="off" tabindex="" style="width: 4px; opacity: 0; position: absolute; left: -10000px;"></div></div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button class="btn btn-circle  btn-default" type="button"><span class="glyphicon glyphicon-plus"></span></button>
+                                    </div>
+                                <span class="material-input"></span></div>
+                                
+                                <div class="" hidden="">
+                                    <hr>
+                                    <h4>New Vendor</h4>
+                                    <div class="form-group clearfix is-empty">
+                                        <label class="col-md-3 control-label">Name</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control">
+                                        </div>
+                                    <span class="material-input"></span></div>
+                                    <div class="form-group clearfix is-empty">
+                                        <label class="col-md-3 control-label">Short Name</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control">
+                                        </div>
+                                    <span class="material-input"></span></div>
+                                    <div class="form-group clearfix is-empty">
+                                        <label class="col-md-3 control-label">Synonims</label>
+                                        <div class="col-md-9">
+                                            <input class="selectized form-control vendor-synonims" style="height: auto; display: none;" tabindex="-1" value=""><div class="selectize-control selectized form-control vendor-synonims multi"><div class="selectize-input items not-full"><input type="text" autocomplete="off" tabindex="" style="width: 4px;"></div><div class="selectize-dropdown multi selectized form-control vendor-synonims" style="display: none;"><div class="selectize-dropdown-content"></div></div></div>
+                                        </div>
+                                    <span class="material-input"></span></div>
+                                    <div class="form-group clearfix">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-default pull-right">Cancel New Vendor</button>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                
+                                <div class="form-group clearfix">
+                                    <label class="col-md-3 control-label" for="select-flavor">Flavors</label>
+                                    <div class="col-md-9">
+                                        <select class="form-control selectized" id="select-flavor" placeholder="Select a flavors..." multiple="multiple" tabindex="-1" style="display: none;"><option value="2" selected="selected">Сладость</option><option value="4" selected="selected">Богатый</option><option value="6" selected="selected">Специи</option></select><div class="selectize-control form-control multi"><div class="selectize-input items has-options has-items full"><div data-value="2" class="item">Сладость</div><div data-value="4" class="item">Богатый</div><div data-value="6" class="item">Специи</div><input type="text" autocomplete="off" tabindex="" style="width: 4px; opacity: 0; position: absolute; left: -10000px;"></div><div class="selectize-dropdown multi form-control" style="display: none; visibility: visible; width: 384px; top: 42px; left: 0px;"><div class="selectize-dropdown-content"><div data-value="3" data-selectable="" class="option">Фрукты</div><div data-value="5" data-selectable="" class="option">Крема</div><div data-value="7" data-selectable="" class="option">Табак</div><div data-value="8" data-selectable="" class="option">Прохлада</div><div data-value="9" data-selectable="" class="option">Орехи</div><div data-value="10" data-selectable="" class="option">Кофе</div><div data-value="11" data-selectable="" class="option">Ваниль</div><div data-value="12" data-selectable="" class="option">Кислинка</div></div></div></div>
+                                    </div>
+                                <span class="material-input"></span></div>
+                            </fieldset>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-raised" type="button">Add<div class="ripple-container"><div class="ripple ripple-on ripple-out" style="left: 36.125px; top: 21px; transform: scale(7.5); background-color: rgba(255, 255, 255, 0.843137);"></div><div class="ripple ripple-on ripple-out" style="left: 19.125px; top: 4px; transform: scale(7.5); background-color: rgba(255, 255, 255, 0.843137);"></div></div></button>
+            </div>
+        </div>
+    </div>
+</div></aroma-add></aromalist>
+<script>
+      System.import('/lib/spa/Views/aroma')
+    .then(function(){ }, console.error.bind(console));
+</script>
+        <hr>
+        <footer>
+            <p>© 2016 - Vape.WebPortal</p>
+        </footer>
+    </div>
+
+    <!-- Twitter Bootstrap -->
+    <script src="./- Vape.WebPortal_files/bootstrap.min.js"></script>
+
+    <!-- Material Design for Bootstrap -->
+    <script src="./- Vape.WebPortal_files/material.js"></script>
+    <script src="./- Vape.WebPortal_files/ripples.min.js"></script>
+
+    <!-- Sliders -->
+    <script src="./- Vape.WebPortal_files/jquery.nouislider.min.js"></script>
+
+
+    <!-- Dropdown.js -->
+    <script src="./- Vape.WebPortal_files/jquery.dropdown.js"></script>
+    <script>
+        //$.material.init();
+    </script>
+
+
+    <!-- Sliders -->
+
+    <!-- Dropdown.js -->
+    <script src="./- Vape.WebPortal_files/jquery.dropdown.js"></script>
+    <script>
+        $("#dropdown-menu select").dropdown();
+    </script>
+    
+
+
+<div class="selectize-dropdown single form-control" style="display: none; visibility: visible; width: 292px; top: 188px; left: 828.5px;"><div class="selectize-dropdown-content"><div data-value="2" data-selectable="" class="option">Capella Flavors</div><div data-value="1" data-selectable="" class="option selected">The Perfumers Apprentice</div></div></div></body></html>
